@@ -33,12 +33,22 @@ public class Operadores {
 		
 		
 		//Operadores de incremento e decremento ++ --
-		System.out.println("\nOperadores de incremento e decremento");
+		System.out.println("\nOperadores de incremento");
 		System.out.println(++num1);//pré-incremento, soma logo de início.
 		System.out.println(num1++); //pos-incremento, só soma +1 ao final
 		System.out.println(num1);
 		
 		System.out.println(num1+=10);
+		System.out.println(num1*=3);
+		System.out.println(num1/=4);
+		System.out.println(num1);
+		
+		System.out.println("\nOperadores de decremento");
+		System.out.println(--num1);
+		System.out.println(num1--); 
+		System.out.println(num1);
+		
+		System.out.println(num1-=10);
 		System.out.println(num1*=3);
 		System.out.println(num1/=4);
 		System.out.println(num1);
