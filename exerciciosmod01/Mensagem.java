@@ -25,7 +25,7 @@ public class Mensagem {
 		//usando o construtor padrão
         Random poema = new Random();
 
-      //números inteiros aleatórios entre 0 e 1
+      //número inteiro aleatório entre 0 e 1
        
         System.out.println(listaPoema[poema.nextInt(2)]);
         
