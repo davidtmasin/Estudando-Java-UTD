@@ -10,7 +10,7 @@ public class TudoJuntoMisturado {
 		System.out.println("++ +++      +++++++++       ++ ++       +++++++++");
 		System.out.println("++++++     +++++++++++       +++       +++++++++++");
 		System.out.println(" ++++     +++       +++       +       +++       +++");
-		System.out.println("___________-Universidade do Trabalho Digital-__________");
+		System.out.println("___________-Universidade do Trabalho Digital-___________");
 		
 		
 		//Alunos
