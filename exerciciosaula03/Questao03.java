@@ -14,7 +14,22 @@ public class Questao03 {
 		//num = leitor.nextInt();
 		num = Integer.parseInt(JOptionPane.showInputDialog("Digite um número: "));
 			
-		System.out.println(num);
+		System.out.println("O número digitado foi " + num + ".");
+		
+		cent = num / 100;
+		
+		System.out.println(cent + " centena(s).");
+		
+		dez = (num - cent * 100)  / 10;
+		
+		System.out.println(dez + " dezena(s).");
+		
+		//(num - centena * 100) % 10
+		unid = num % 10;
+		
+		System.out.println(unid + " unidade(s).");
+		
+		System.out.println("O número digitado invertido fica: "+unid+dez+cent);
 		
 	}
 }
