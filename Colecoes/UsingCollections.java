@@ -24,11 +24,13 @@ public class UsingCollections {
 		//room.remove(p2);
 		
 		room.add(0,p5);
+		
 		/*
-		room.clear();		
-		System.out.println(room.isEmpty());
-		System.out.println(room.indexOf(p4));
-		*/									//getName
+			room.clear();		
+			System.out.println(room.isEmpty());
+			System.out.println(room.indexOf(p4));
+		*/									
+											//getName
 		room.sort(Comparator.comparing(People::getAge).reversed()); //Um Comparator permite a ordenação de objetos, o reversed faz ao ordenação ao contrário
 		for(People people : room) {
 			
