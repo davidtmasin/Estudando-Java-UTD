@@ -7,15 +7,21 @@ public abstract class Funcionario {
 	//private String setor;
 	private String cargo;
 	private double salario;
+	private static long numFuncionario; //atributo compartilhado por todas as classes herdadeiras de Funcionário
 	
-	//public Funcionario() {}
+	public Funcionario() {
+		
+		numFuncionario++;
+	}
 	
 	public Funcionario(long matricula, String nome, String cargo, double salario) {
 		
 		this.matricula = matricula;
 		this.nome = nome;
 		this.cargo = cargo;
-		this.salario = salario;
+		this.salario = salario;	
+		
+		numFuncionario++;
 		
 	}
 	
@@ -59,7 +65,10 @@ public abstract class Funcionario {
 		this.salario = salario;
 	}
 	
-	
+	//Método é uma função aplicada a um objeto
+	public static void exibirNumFuncionarios() { //Quando se acrescenta static a um método, será possível chamar a classe.metodo() sem usar o objeto.metodo()
+		System.out.println(numFuncionario);
+	}
 	
 	
 }

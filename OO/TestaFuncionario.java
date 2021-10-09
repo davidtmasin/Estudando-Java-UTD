@@ -20,7 +20,13 @@ public class TestaFuncionario {
 		System.out.println("Cargo do funcionário: " + f1.getCargo());
 		System.out.println("Setor do funcionário: " + f1.getSetor());
 		System.out.println("Salário do funcionário: R$" + f1.getSalario());
-				
+		
+		FuncionarioOperacional f2 = new FuncionarioOperacional();
+		FuncionarioOperacional f3 = new FuncionarioOperacional();
+		
+		//Funcionario.exibirNumFuncionarios();
+		FuncionarioOperacional.exibirNumFuncionarios();
+		
 	}
 
 }
