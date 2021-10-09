@@ -1,6 +1,6 @@
 package OO;
 
-public class Funcionario {
+public abstract class Funcionario {
 	
 	private long matricula;
 	private String nome;
@@ -8,6 +8,16 @@ public class Funcionario {
 	private String cargo;
 	private double salario;
 	
+	//public Funcionario() {}
+	
+	public Funcionario(long matricula, String nome, String cargo, double salario) {
+		
+		this.matricula = matricula;
+		this.nome = nome;
+		this.cargo = cargo;
+		this.salario = salario;
+		
+	}
 	
 	public long getMatricula() {
 		return matricula;
