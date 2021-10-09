@@ -13,21 +13,30 @@ public class FuncoesAltaOrdem {
 		int num1 = leitor.nextInt();
 		System.out.print("Digite o segundo número: ");
 		int num2 = leitor.nextInt();
-				
+			
+		FuncoesAltaOrdem fao = new FuncoesAltaOrdem();
+		
 		//Expressões lambda
 		Operacao soma = (int a, int b) -> a+b;
 		Operacao subtracao = (int a, int b) -> a-b;
 		Operacao divisao = (int a, int b) -> a/b;
 		Operacao multiplicacao = (int a, int b) -> a*b;
 		
+		/*
 		System.out.println("O resultado da soma: " + calcular(soma, num1, num2));
 		System.out.println("O resultado da subtração: " + calcular(subtracao, num1, num2));
 		System.out.println("O resultado da divisão: " + calcular(divisao, num1, num2));
 		System.out.println("O resultado da multiplicação: " + calcular(multiplicacao, num1, num2));
+		*/
 		
+		System.out.println("O resultado da soma: " + fao.calcular(soma, num1, num2));
+		System.out.println("O resultado da subtração: " + fao.calcular(subtracao, num1, num2));
+		System.out.println("O resultado da divisão: " + fao.calcular(divisao, num1, num2));
+		System.out.println("O resultado da multiplicação: " + fao.calcular(multiplicacao, num1, num2));
 	}
 	
-	public static double calcular(Operacao op, int a, int b) {
+	//public static double calcular(Operacao op, int a, int b) {
+	public double calcular(Operacao op, int a, int b) { //Vou precisar instanciar um objeto para poder chamar o método calcular
 		return op.executar(a, b);
 	}
 }
