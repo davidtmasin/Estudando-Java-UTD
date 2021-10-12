@@ -6,7 +6,8 @@ import java.util.List;
 public class UsingFunctionalProgramming {
 	
 	public static void main(String[] args) {
-	
+		List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9);
+		
 		List<String> students = Arrays.asList("David", "José", "Jubileu", 
 											  "Coelho", "Karine", "Mariana", 
 											  "Sophia", "Carol","Raquel", "Maria", 
@@ -31,6 +32,22 @@ public class UsingFunctionalProgramming {
 		String verficacao = students.stream().filter(student -> student.contains("e")).reduce((acumulador, student) -> acumulador+="\n"+student).orElse("Não há alunos com a letra 'i' no nome");
 		System.out.println(verficacao);
 		System.out.println("--------------------------------------------------------------");
+		
+		System.out.println("Fazendo uma função contendo IF-ELSE dentro de map()");
+		System.out.println("- Se número maior que 5, será multiplicado por 10");
+		System.out.println("- Caso contrário, soma 2 ao número");
+		System.out.println("--------------------------------------------------------------");
+
+		numbers.stream().map(number ->{
+			if(number>5) {
+					return number*10;					
+				} else {
+					return number+2;
+				}
+		}).forEach(System.out::println);;
+		
+		System.out.println("--------------------------------------------------------------");		
+		
 		
 	}
 
