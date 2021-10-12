@@ -45,7 +45,7 @@ public class UsandoJF extends JFrame {
 	public UsandoJF() {
 		setFont(new Font("Bahnschrift", Font.PLAIN, 12));
 		setForeground(Color.BLACK);
-		setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\david\\Downloads\\95844235_2684387128512109_1970007013689655296_n.png"));
+		setIconImage(Toolkit.getDefaultToolkit().getImage(UsandoJF.class.getResource("/TestandoJFrame/images/icon.png")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 249, 219);
 		contentPane = new JPanel();
